@@ -5,105 +5,44 @@ Natural Convection And Phase Change
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.x-red)
 
 
-Physics Informed Neural Networks with JAX. **jinns** is a Python package for physics-informed neural networks (PINNs) in the [JAX](https://jax.readthedocs.io/en/latest/) ecosystem. It provides an intuitive and flexible interface for
+Physics Informed Neural Networks for the natural convection problems and for phase change materials
 
- * forward problem: learning a PDE solution.
- * inverse problem: learning the parameters of a PDE. See `jinns.solve_alternate()` for fine-grained and efficient inverse problems.
- * meta-modeling: learning a family of PDE indexed by its parameters.
- * **New in jinns v1.9.2:** Second order optimizers which greatly enhances the training of PINNs. We recommend testing them as default optimizers.
-
-**jinns** specific points:
-
-- **jinns uses JAX** - It is directed to JAX users: forward and backward autodiff, vmapping, jitting and more! No reinventing the wheel: it relies on the JAX ecosystem whenever possible, such as [equinox](https://github.com/patrick-kidger/equinox/) for neural networks or [optax](https://optax.readthedocs.io/) for optimization.
-
-- **jinns is highly modular** - It gives users maximum control for defining their problems, and extending the package. The maths and computations are visible and not hidden behind layers of code!
-
-- **jinns is efficient** - It compares favorably to other existing Python package for PINNs on the [PINNacle benchmarks](https://github.com/i207M/PINNacle/), as demonstrated in the table below. For more details on the benchmarks, checkout the [PINN multi-library benchmark](https://gitlab.com/mia_jinns/pinn-multi-library-benchmark)
-
-- Implemented PINN architectures
-    - Vanilla Multi-Layer Perceptron popular accross the PINNs litterature.
-
-    - [Separable PINNs](https://openreview.net/pdf?id=dEySGIcDnI): allows to leverage forward-mode autodiff for computational speed.
-
-    - [Hyper PINNs](https://arxiv.org/pdf/2111.01008.pdf): useful for meta-modeling
-
-- Other
-    - Adaptative Loss Weights are now implemented. Some SoftAdapt, LRAnnealing and ReLoBRaLo are available and users can implement their own strategy. See the [tutorial](https://mia_jinns.gitlab.io/jinns/Notebooks/Tutorials/implementing_your_own_PDE_problem/)
-
-
-- **Get started**: check out our various notebooks on the [documentation](https://mia_jinns.gitlab.io/jinns/index.html).
-
-|  | jinns | DeepXDE - JAX | DeepXDE - Pytorch | PINA | Nvidia Modulus |
-|---|:---:|:---:|:---:|:---:|:---:|
-| Burgers1D | **445** | 723 | 671 | 1977 | 646 |
-| NS2d-C | **265** | 278 | 441 | 1600 | 275 |
-| PInv | 149 | 218 | *CC* | 1509 | **135** |
-| Diffusion-Reaction-Inv | **284** | *NI* | 3424 | 4061 | 2541 |
-| Navier-Stokes-Inv | **175** | *NI* | 1511 | 1403 | 498 |
-
-*Training time in seconds on an Nvidia T600  GPU. NI means problem cannot be implemented in the backend, CC means the code crashed.*
-
-![A diagram of jinns workflow](img/jinns-diagram.png)
-
-
-# Installation
-
-Install the latest version with pip
-
-```bash
-pip install jinns
-```
-
-# Documentation
-
-The project's documentation is hosted on Gitlab page and available at [https://mia_jinns.gitlab.io/jinns/index.html](https://mia_jinns.gitlab.io/jinns/index.html).
-
-
-# Found a bug / want a feature ?
-
-Open an issue on the [Gitlab repo](https://gitlab.com/mia_jinns/jinns/-/issues).
-
-
-# Contributing
-
-Here are the contributors guidelines:
-
-1. First fork the library on Gitlab.
-
-2. Then clone and install the library in development mode with
-
-```bash
-pip install -e .
-```
-
-3. Install pre-commit and run it. Our pre-commit hooks consist in `ruff format` and `ruff check`. You can install `ruff` simply by `pip install ruff`. We highly recommend you to check the code type hints with `pyright` even though we currently have no rule concerning type checking in the pipeline.
-
-```bash
-pip install pre-commit
-pre-commit install
-```
-
- 4. Open a merge request once you are done with your changes, the review will be done via Gitlab.
-
+ * time indep natural convection
+ * time dep natural convection
+ * convection of water
+ 
+ * Phase change materials
+ * Phase change materials with cylindrical geometry
+ 
+ - Implemented PINN architectures
+    - Multi-Layer Perceptron 
+    - FF
+    - ST - FF
+ 
+ - Other
+    - Adaptative Loss Weights
+    
 # Contributors
 
-Don't hesitate to contribute and get your name on the list here !
-
-**List of contributors:** Hugo Gangloff, Nicolas Jouvin, Lucia Clarotto, Inass Soukarieh, Mohamed Badi
+**List of contributors:** ...
 
 # Cite us
 
-Please consider citing our work if you found it useful to yours, using this [ArXiV preprint](https://arxiv.org/abs/2412.14132)
-```
-@article{gangloff_jouvin2024jinns,
-  title={jinns: a JAX Library for Physics-Informed Neural Networks},
-  author={Gangloff, Hugo and Jouvin, Nicolas},
-  journal={arXiv preprint arXiv:2412.14132},
-  year={2024}
+Please consider citing our work if you found it useful to yours, using this [Test](https://www.sciencedirect.com/science/article/pii/S0017931025007690?casa_token=1TaxBElUNmAAAAAA:md-kcpgBhBkPRF1DRkYPRcLGgx-DZWMHl9A2BTsZzDXjiWraMfpE1N66jHPHC-6zAgXJNhu-Etv-)
+
+```bibtex
+@article{madir2025physics,
+  title={Physics Informed Neural Networks for Heat Conduction with Phase Change},
+  author={Madir, Bahae-Eddine and Luddens, Francky and Lothod{\'e}, Corentin and Danaila, Ionut},
+  journal={International Journal of Heat and Mass Transfer},
+  volume={252},
+  pages={127430},
+  year={2025},
+  publisher={Elsevier}
 }
 ```
 
 # Acknowledgement
 
-The library benefited from discussions with other researchers and devs. Special thanks to the [Scimba library](https://www.scimba.org/) team, go check out their work if you are interested in sciML and hybrid numerical methods !
+Special thanks to ...
 
