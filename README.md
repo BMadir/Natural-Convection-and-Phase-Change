@@ -51,70 +51,11 @@ The PINN-based strategies developed for these problems are systematically compar
 
 <br>
 
+
 ## References
 
 A preprint will be available soon.
 
-<!--
----
+## Code Availability
 
-Physics Informed Neural Networks for the natural convection problems and for phase change materials
-
- * time indep natural convection
- * time dep natural convection
- * convection of water
- 
- * Phase change materials
- * Phase change materials with cylindrical geometry
- 
- - Implemented PINN architectures
-    - Multi-Layer Perceptron 
-    - FF
-    - ST - FF
- 
- - Other
-    - Adaptative Loss Weights
-    
-    
-<br>
-
-<p align="center">
-  <img src="docs/Gif/Okada.gif" height="300">
-  &nbsp;&nbsp;
-  <img src="docs/Gif/Luo.gif" height="300">
-</p>
-
-<p align="center">
-  <em> Temperature field (T) and phase-change interface evolution (s) predicted by Physics-Informed Neural Networks.</em>
-</p>
-
-<br>
--->
-
-<!--
-
-# Contributors
-
-**List of contributors:** ...
-
-# Cite us
-
-Please consider citing our work if you found it useful to yours, using this [Test](https://www.sciencedirect.com/science/article/pii/S0017931025007690?casa_token=1TaxBElUNmAAAAAA:md-kcpgBhBkPRF1DRkYPRcLGgx-DZWMHl9A2BTsZzDXjiWraMfpE1N66jHPHC-6zAgXJNhu-Etv-)
-
-```bibtex
-@article{madir2025physics,
-  title={Physics Informed Neural Networks for Heat Conduction with Phase Change},
-  author={Madir, Bahae-Eddine and Luddens, Francky and Lothod{\'e}, Corentin and Danaila, Ionut},
-  journal={International Journal of Heat and Mass Transfer},
-  volume={252},
-  pages={127430},
-  year={2025},
-  publisher={Elsevier}
-}
-```
-
-# Acknowledgement
-
-Special thanks to ...
-
--->
+The source code will be made publicly available following the publication of the corresponding paper.
