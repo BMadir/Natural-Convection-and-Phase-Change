@@ -6,6 +6,8 @@
 ![CUDA](https://img.shields.io/badge/CUDA-12.4-green)
 -->
 
+## The Enthalpy-Porosity Model
+
 We consider a solid–liquid system placed in a 2D domain $\Omega$. The dimensionless system of equations to be solved in both liquid and solid regions is based on the incompressible Navier–Stokes equations, with Boussinesq approximation for buoyancy effects, and a temperature transforming model for the energy equation:
 
 $$
