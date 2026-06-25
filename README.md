@@ -18,7 +18,7 @@ $$
 
 The buoyancy term $F(\theta)$ models density variations induced by temperature gradients, enabling the simulation of natural convection within the liquid region. The term $A(\theta)\mathbf{u}$ force the velocity to vanish in the solid phase.
 
-The energy equation incorporates the latent heat contribution through the regularized Heaviside function $\varphi_\delta(\theta)$, which smoothly captures the solid–liquid transition. As a result, the model the melting/solidification phenomena in a solid–liquid system without explicitly tracking the interface.
+The energy equation incorporates the latent heat contribution through the regularized Heaviside function $\varphi_\delta(\theta)$, which smoothly captures the solid–liquid transition. Consequently, the model can represent melting and solidification processes without the need for explicit interface tracking.
 
 ---
 
