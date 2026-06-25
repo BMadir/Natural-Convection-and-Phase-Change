@@ -9,7 +9,7 @@
 $$
 \begin{aligned}
 \nabla \cdot \mathbf{u} &= 0, \\
-\frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u}\cdot\nabla)\mathbf{u} + \nabla p - \frac{1}{Re}\nabla^2\mathbf{u} - F(\theta)\mathbf{e} - A(\theta)\mathbf{u} &= 0, \\
+\frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u}\cdot\nabla)\mathbf{u} + \nabla p - \frac{1}{Re}\nabla^2\mathbf{u} - F(\theta) - A(\theta)\mathbf{u} &= 0, \\
 \frac{\partial \theta}{\partial t} + (\mathbf{u}\cdot\nabla)\theta - \frac{1}{Re Pr}\nabla^2\theta + \frac{1}{Ste}\frac{\partial \varphi_\delta(\theta)}{\partial t} &= 0.
 \end{aligned}
 $$
