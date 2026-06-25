@@ -40,7 +40,7 @@ The PINN-based strategies developed for these problems are systematically compar
 <br>
 
 <p align="center">
-  <img src="docs/Gif/Okada.gif" height="400">
+  <img src="docs/Gif/Okada.gif" height="350">
   &nbsp;&nbsp;
   <img src="docs/Gif/Luo.gif" height="400">
 </p>
