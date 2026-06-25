@@ -6,6 +6,10 @@
 ![CUDA](https://img.shields.io/badge/CUDA-12.4-green)
 -->
 
+We consider a three-dimensional solid–liquid system governed by a unified formulation capable of describing both natural convection in the liquid phase and phase-change phenomena at the solid–liquid interface. The model combines the incompressible Navier–Stokes equations with the Boussinesq approximation for buoyancy-driven flows and a temperature-transforming formulation of the energy equation to account for latent heat effects during melting and solidification.
+
+The dimensionless governing equations, solved over the entire computational domain, are given by
+
 $$
 \begin{aligned}
 \nabla \cdot \mathbf{u} &= 0, \\
@@ -13,6 +17,14 @@ $$
 \frac{\partial \theta}{\partial t} + (\mathbf{u}\cdot\nabla)\theta - \frac{1}{Re Pr}\nabla^2\theta + \frac{1}{Ste}\frac{\partial \varphi_\delta(\theta)}{\partial t} &= 0.
 \end{aligned}
 $$
+
+In this formulation, the buoyancy term $F(\theta)$ models density variations induced by temperature gradients through the Boussinesq approximation, enabling the simulation of natural convection within the liquid region. The damping term $A(\theta)\mathbf{u}$ suppresses fluid motion in the solid phase, allowing both phases to be treated within a single computational framework.
+
+The energy equation incorporates the latent heat contribution through the regularized phase function $\varphi_\delta(\theta)$, which smoothly captures the solid–liquid transition. As a result, the model naturally predicts the evolution of the moving melting/solidification front without explicitly tracking the interface.
+
+The dimensionless parameters governing the problem are the Reynolds number $Re$, the Prandtl number $Pr$, and the Stefan number $Ste$, which characterize the relative importance of inertial, thermal diffusion, and latent heat effects, respectively.
+
+
 
 Physics Informed Neural Networks for the natural convection problems and for phase change materials
 
