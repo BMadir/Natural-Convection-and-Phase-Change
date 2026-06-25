@@ -4,7 +4,9 @@
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.6.0-red)
 ![CUDA](https://img.shields.io/badge/CUDA-12.4-green)
--->$$
+-->
+
+$$
 \begin{aligned}
 \nabla \cdot \mathbf{u} &= 0, \\
 \frac{\partial \mathbf{u}}{\partial t}
@@ -21,8 +23,6 @@
 &= 0.
 \end{aligned}
 $$
-$$
-
 
 Physics Informed Neural Networks for the natural convection problems and for phase change materials
 
