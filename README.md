@@ -1,10 +1,28 @@
-Natural Convection And Phase Change
+# Natural Convection And Phase Change
 
 <!---
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.6.0-red)
 ![CUDA](https://img.shields.io/badge/CUDA-12.4-green)
--->
+-->$$
+\begin{aligned}
+\nabla \cdot \mathbf{u} &= 0, \\
+\frac{\partial \mathbf{u}}{\partial t}
++ (\mathbf{u}\cdot\nabla)\mathbf{u}
++ \nabla p
+- \frac{1}{Re}\nabla^2\mathbf{u}
+- F(\theta)\mathbf{e}
+- A(\theta)\mathbf{u}
+&= 0, \\
+\frac{\partial \theta}{\partial t}
++ (\mathbf{u}\cdot\nabla)\theta
+- \frac{1}{Re\,Pr}\nabla^2\theta
++ \frac{1}{Ste}\frac{\partial \varphi_\delta(\theta)}{\partial t}
+&= 0.
+\end{aligned}
+$$
+$$
+
 
 Physics Informed Neural Networks for the natural convection problems and for phase change materials
 
