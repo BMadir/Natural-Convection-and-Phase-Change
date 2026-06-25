@@ -27,8 +27,8 @@ The energy equation incorporates the latent heat contribution through the regula
 We investigate several problems involving natural convection and phase change using Physics-Informed Neural Networks (PINNs):
 
 ### Natural Convection
-- The time independent problem of natural convection for different Rayleigh number $Ra$ regimes ($10^4 -- 10^7$).
-- The time dependent problem of natural convection at \(Ra = 10^6\).
+- The time independent problem of natural convection for different Rayleigh number $Ra$ regimes ($10^4 - 10^7$).
+- The time dependent problem of natural convection at $Ra = 10^6$.
 - Natural convection of water, where the density–temperature relationship is non-linear.
 
 ### Phase Change
