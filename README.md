@@ -1,9 +1,10 @@
 Natural Convection And Phase Change
-=====
 
-![Python](https://img.shields.io/badge/Python-3.12-blue)
-![PyTorch](https://img.shields.io/badge/PyTorch-2.x-red)
-
+<!---
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.6.0-red)
+![CUDA](https://img.shields.io/badge/CUDA-12.4-green)
+-->
 
 Physics Informed Neural Networks for the natural convection problems and for phase change materials
 
@@ -22,6 +23,23 @@ Physics Informed Neural Networks for the natural convection problems and for pha
  - Other
     - Adaptative Loss Weights
     
+    
+<br>
+
+<p align="center">
+  <img src="docs/Gif/Okada.gif" height="300">
+  &nbsp;&nbsp;
+  <img src="docs/Gif/Luo.gif" height="300">
+</p>
+
+<p align="center">
+  <em> Temperature field (T) and phase-change interface evolution (s) predicted by Physics-Informed Neural Networks.</em>
+</p>
+
+<br>
+
+<!--
+
 # Contributors
 
 **List of contributors:** ...
@@ -46,3 +64,4 @@ Please consider citing our work if you found it useful to yours, using this [Tes
 
 Special thanks to ...
 
+-->
