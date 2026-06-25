@@ -46,7 +46,7 @@ The PINN-based strategies developed for these problems are systematically compar
 </p>
 
 <p align="center">
-  <em> Temperature field (T) and phase-change interface evolution (s) predicted by Physics-Informed Neural Networks.</em>
+  <em> Temperature field (T), velocity vector field ([u, v]), and phase-change interface evolution (s) predicted by Physics-Informed Neural Networks.</em>
 </p>
 
 <br>
