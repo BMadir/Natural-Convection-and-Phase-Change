@@ -24,6 +24,40 @@ The energy equation incorporates the latent heat contribution through the regula
 
 ---
 
+We investigate several problems involving natural convection and phase change using Physics-Informed Neural Networks (PINNs):
+
+### Natural Convection
+- The time independent problem of natural convection for different Rayleigh number $Ra$ regimes ($10^4 -- 10^7$).
+- The time dependent problem of natural convection at \(Ra = 10^6\).
+- Natural convection of water, where the density–temperature relationship is non-linear.
+
+### Phase Change
+- Melting of *n*-octadecane ([Okada benchmark case](https://www.sciencedirect.com/science/article/pii/0017931084901923)).
+- Melting in a cylindrical geometry.
+
+The PINN-based strategies developed for these problems are systematically compared against accurate finite element simulations to assess their accuracy.
+
+<br>
+
+<p align="center">
+  <img src="docs/Gif/Okada.gif" height="400">
+  &nbsp;&nbsp;
+  <img src="docs/Gif/Luo.gif" height="400">
+</p>
+
+<p align="center">
+  <em> Temperature field (T) and phase-change interface evolution (s) predicted by Physics-Informed Neural Networks.</em>
+</p>
+
+<br>
+
+## References
+
+A preprint will be available soon.
+
+<!--
+---
+
 Physics Informed Neural Networks for the natural convection problems and for phase change materials
 
  * time indep natural convection
@@ -55,6 +89,7 @@ Physics Informed Neural Networks for the natural convection problems and for pha
 </p>
 
 <br>
+-->
 
 <!--
 
