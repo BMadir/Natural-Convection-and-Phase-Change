@@ -35,7 +35,7 @@ We investigate several problems involving natural convection and phase change us
 - Melting of *n*-octadecane ([Okada benchmark](https://www.sciencedirect.com/science/article/pii/0017931084901923)).
 - Melting in a cylindrical geometry.
 
-The PINN-based strategies developed for these problems are systematically compared against accurate [finite element simulations](https://www.sciencedirect.com/science/article/pii/S0010465520302319?casa_token=7a_ArBSS1QAAAAAA:OFWAwbIGBVpRSHVYhvKpzbeEY7XD8NmTarJlbb3QSLm6FyQbhti3Tcng6naA4G_dign_HTKPbXLO) to assess their accuracy.
+The PINN-based strategies developed for these problems are systematically compared against accurate [Finite Element](https://www.sciencedirect.com/science/article/pii/S0010465520302319?casa_token=7a_ArBSS1QAAAAAA:OFWAwbIGBVpRSHVYhvKpzbeEY7XD8NmTarJlbb3QSLm6FyQbhti3Tcng6naA4G_dign_HTKPbXLO) simulations to assess their accuracy.
 
 <br>
 
