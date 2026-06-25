@@ -6,9 +6,7 @@
 ![CUDA](https://img.shields.io/badge/CUDA-12.4-green)
 -->
 
-We consider a three-dimensional solid–liquid system governed by a unified formulation capable of describing both natural convection in the liquid phase and phase-change phenomena at the solid–liquid interface. The model combines the incompressible Navier–Stokes equations with the Boussinesq approximation for buoyancy-driven flows and a temperature-transforming formulation of the energy equation to account for latent heat effects during melting and solidification.
-
-The dimensionless governing equations, solved over the entire computational domain, are given by
+We consider a solid–liquid system placed in a 2D domain $\Omega$. The dimensionless system of equations to be solved in both liquid and solid regions is based on the incompressible Navier–Stokes equations, with Boussinesq approximation for buoyancy effects, and a temperature transforming model for the energy equation:
 
 $$
 \begin{aligned}
@@ -18,13 +16,11 @@ $$
 \end{aligned}
 $$
 
-In this formulation, the buoyancy term $F(\theta)$ models density variations induced by temperature gradients through the Boussinesq approximation, enabling the simulation of natural convection within the liquid region. The damping term $A(\theta)\mathbf{u}$ suppresses fluid motion in the solid phase, allowing both phases to be treated within a single computational framework.
+The buoyancy term $F(\theta)$ models density variations induced by temperature gradients, enabling the simulation of natural convection within the liquid region. The term $A(\theta)\mathbf{u}$ force the velocity to vanish in the solid phase.
 
-The energy equation incorporates the latent heat contribution through the regularized phase function $\varphi_\delta(\theta)$, which smoothly captures the solid–liquid transition. As a result, the model naturally predicts the evolution of the moving melting/solidification front without explicitly tracking the interface.
+The energy equation incorporates the latent heat contribution through the regularized Heaviside function $\varphi_\delta(\theta)$, which smoothly captures the solid–liquid transition. As a result, the model the melting/solidification phenomena in a solid–liquid system without explicitly tracking the interface.
 
-The dimensionless parameters governing the problem are the Reynolds number $Re$, the Prandtl number $Pr$, and the Stefan number $Ste$, which characterize the relative importance of inertial, thermal diffusion, and latent heat effects, respectively.
-
-
+---
 
 Physics Informed Neural Networks for the natural convection problems and for phase change materials
 
